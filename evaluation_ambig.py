@@ -184,7 +184,7 @@ def parse_args():
     parser.add_argument('--style', default='split_inference', help='split')
     parser.add_argument('--id_file', default='data/ambig_uc_id_list.json')
     parser.add_argument('--question_file', default='data/ambignq/dev_with_evidence_articles.json')
-    parser.add_argument('--result_list', default=['output/ambig/dense_ambig.json'])
+    parser.add_argument('--result_list', default=['output/ambig/secure_ambig.json'])
     args = parser.parse_args()
     return args
 

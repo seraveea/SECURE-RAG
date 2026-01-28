@@ -160,7 +160,7 @@ def parse_args():
     parser.add_argument('--id_file', default='data/nq_uc_id_list.json')
     parser.add_argument('--style', default='split_inference', help='split, split_inference. If swith to split mode will cover current uncertain id list')
     parser.add_argument('--result_list',
-                        default=['output/nq/dense_nq.json'])
+                        default=['output/nq/secure_nq.json'])
     args = parser.parse_args()
     return args
 

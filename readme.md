@@ -1,4 +1,4 @@
-# Official implementation of DENSE-RAG
+# Official implementation of SECURE-RAG
 
 ## Environments
 1. We recommend using python 3.12.9
@@ -30,7 +30,7 @@ For 1.5B and 8B models, we recommend use GPU devices with minimum 24GB memory (3
 
  For 70B model, we recommend use GPU devices with minimum 120GB memory (2xA100 is enough).
 
-### DENSE_eval on Llama3 8B
+### SECURE_eval on Llama3 8B
 ```
 python rag_exp.py --result_file output/trivia/eval_trivia.json --device cuda:1 --context_type single_replace --dataset trivia 
 
@@ -40,37 +40,37 @@ python rag_exp.py --result_file output/ambig/eval_ambig.json --device cuda:1 --c
 
 python rag_exp.py --result_file output/2wqa/eval_2wqa.json --device cuda:1 --context_type single_replace --dataset 2wqa
 ```
-### DENSE-RAG on Llama3 8B
+### SECURE-RAG on Llama3 8B
 ```
-python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/dense_trivia.json
+python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/secure_trivia.json
 
-python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/dense_NQ.json --split ''
+python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/secure_NQ.json --split ''
 
-python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/dense_2wqa.json --split ''
+python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/secure_2wqa.json --split ''
 
-python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/dense_ambig.json
+python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/secure_ambig.json
 ```
-### DENSE-RAG on Qwen2.5 1.5B
+### SECURE-RAG on Qwen2.5 1.5B
 ```
-python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/dense_trivia_qwen.json --model qwen-1.5b
+python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/secure_trivia_qwen.json --model qwen-1.5b
 
-python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/dense_NQ_qwen.json --model qwen-1.5b
+python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/secure_NQ_qwen.json --model qwen-1.5b
 
-python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/dense_2wqa_qwn.json --model qwen-1.5b
+python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/secure_2wqa_qwn.json --model qwen-1.5b
 
-python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/dense_ambig_qwen.json --model qwen-1.5b
+python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/secure_ambig_qwen.json --model qwen-1.5b
 ```
-### DENSE-RAG on Llama3 70B
+### SECURE-RAG on Llama3 70B
 ```
-python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/dense_trivia_70b.json --model llama-70b
+python rag_exp.py --rag_method rerank --dataset trivia --result_file output/trivia/secure_trivia_70b.json --model llama-70b
 
-python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/dense_NQ_70b.json --model llama-70b
+python rag_exp.py --rag_method rerank --dataset nq --result_file output/nq/secure_NQ_70b.json --model llama-70b
 
-python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/dense_ambig_70b.json --model llama-70b
+python rag_exp.py --rag_method rerank --dataset ambignq --result_file output/ambig/secure_ambig_70b.json --model llama-70b
 
-python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/dense_2wqa_70b.json --model llama-70b
+python rag_exp.py --rag_method rerank --dataset 2wqa --result_file output/2wqa/secure_2wqa_70b.json --model llama-70b
 ```
 
 ## Quick evaluation
-If you don't want to run the whole pipeline, we proivide DENSE-RAG result. You can use the following command to evaluate the result in  `output/[data_set]/`. Please run the `python evaluation_[trivia/nq/ambig/2wqa].py` file for evaluation.
+If you don't want to run the whole pipeline, we proivide SECURE-RAG result. You can use the following command to evaluate the result in  `output/[data_set]/`. Please run the `python evaluation_[trivia/nq/ambig/2wqa].py` file for evaluation.
 

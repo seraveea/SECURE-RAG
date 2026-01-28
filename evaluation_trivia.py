@@ -164,7 +164,7 @@ def parse_args():
     parser.add_argument('--style', default='split_inference', help='split, split_inference. If swith to split mode will cover current uncertain id list')
     parser.add_argument('--question_file', default='data/triviaqa-rc/qa/wikipedia-dev.json')
     parser.add_argument('--result_list',
-                        default=['output/trivia/dense_trivia.json'])
+                        default=['output/trivia/secure_trivia.json'])
     args = parser.parse_args()
     return args
 

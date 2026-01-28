@@ -171,7 +171,7 @@ def parse_args():
     parser.add_argument('--style', default='split_inference', help='split, split_inference')
     parser.add_argument('--question_file', default='data/2wqa/dev.json')
     parser.add_argument('--id_file', default='data/2wqa_uc_id_list.json')
-    parser.add_argument('--result_list', default=['output/2wqa/dense_2wqa.json'])
+    parser.add_argument('--result_list', default=['output/2wqa/secure_2wqa.json'])
     args = parser.parse_args()
     return args
 
