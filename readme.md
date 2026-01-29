@@ -18,8 +18,8 @@ Since we divide four datasets into certain/uncertain questions, we provide all u
 
 
 ## LLM backbones & Embedding models
-Please download LLM backbones and embedding models from huggingface, [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct), 
-[Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B), [Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) and [UAE-Large-V1 embeder](https://huggingface.co/WhereIsAI/UAE-Large-V1).
+Please download LLM backbones and embedding models from huggingface, [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct), 
+[Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B), [Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) and [UAE-Large-V1 embeder](https://huggingface.co/WhereIsAI/UAE-Large-V1).
 
 Please replace `[placeholder]` in [utils/utils.py](utils/utils.py) with the path of your downloaded model. Also we set `os.environ['HF_HUB_OFFLINE'] = '1'` to use local model. If you prefer online mode, please remove this line and change
  `[placeholder]` to a huggingface model link.
