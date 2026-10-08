@@ -26,7 +26,7 @@ def pipeline_instance(args):
     elif args.model == 'llama-70b':
         model_dir = "[placeholder]"
     elif args.model == 'qwen3-8b':
-        model_dir = "/data/user/seraveea/research/hugging_face_cache/Qwen3-8B"
+        model_dir = "placeholder"
         tokenizer = AutoTokenizer.from_pretrained(model_dir)
         model = AutoModelForCausalLM.from_pretrained(
             model_dir,
